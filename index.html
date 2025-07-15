@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YS WEE | Digital Business Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background: #f4f4f4;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* ID card with overlay text */
+    .id-card {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 20px;
+    }
+
+    .id-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .id-text {
+      position: absolute;
+      bottom: 50px; /* pushed up for balance */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      color: #000;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 5px 0;
+      border-radius: 5px;
+    }
+
+    .id-text h1 {
+      margin: 5px 0 2px;
+      font-size: 1.4em; /* bigger name */
+      font-weight: bold;
+    }
+
+    .id-text h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    .id-text h3 {
+      margin: 2px 0 0;
+      font-size: 0.95em;
+    }
+
+    /* Contact & WhatsApp */
+    a {
+      display: block;
+      margin: 5px 0;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+    }
+
+    a.button {
+      display: inline-block;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- ID card image with overlay -->
+    <div class="id-card">
+      <img src="Logo.png" alt="YS WEE ID Card" />
+      <div class="id-text">
+        <h1>YS WEE</h1>
+        <h2>Sales & Technical Manager</h2>
+        <h3>Diginex Technology (M) Sdn. Bhd.</h3>
+      </div>
+    </div>
+
+    <!-- Contact info -->
+    <a href="tel:+60102317781">📞 +60 10-231 7781</a>
+    <a href="mailto:yswee@diginex.com.my">✉️ yswee@diginex.com.my</a>
+    <a href="https://www.diginex.com.my" target="_blank">🌐 www.diginex.com.my</a>
+
+    <!-- WhatsApp icon -->
+    <div class="social-icons">
+      <a href="https://wa.me/60102317781" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
+      </a>
+    </div>
+
+    <!-- Download vCard button -->
+    <a class="button" href="https://weeyscsg.github.io/business-card/YS-WEE.vcf" download>
+      📇 Download My Contact
+    </a>
+  </div>
+</body>
+</html>
