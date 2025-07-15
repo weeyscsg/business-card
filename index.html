@@ -20,9 +20,7 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
-    /* ID card with overlay text */
     .id-card {
-      position: relative;
       display: inline-block;
       width: 100%;
       max-width: 300px;
@@ -34,36 +32,6 @@
       border-radius: 10px;
     }
 
-    .id-text {
-      position: absolute;
-      bottom: 50px; /* pushed up for balance */
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      color: #000;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.6);
-      padding: 5px 0;
-      border-radius: 5px;
-    }
-
-    .id-text h1 {
-      margin: 5px 0 2px;
-      font-size: 1.4em; /* bigger name */
-      font-weight: bold;
-    }
-
-    .id-text h2 {
-      margin: 0;
-      font-size: 1em;
-    }
-
-    .id-text h3 {
-      margin: 2px 0 0;
-      font-size: 0.95em;
-    }
-
-    /* Contact & WhatsApp */
     a {
       display: block;
       margin: 5px 0;
@@ -93,14 +61,9 @@
 </head>
 <body>
   <div class="card">
-    <!-- ID card image with overlay -->
+    <!-- Final ID card image with name/title/company EMBEDDED -->
     <div class="id-card">
       <img src="Logo.png" alt="YS WEE ID Card" />
-      <div class="id-text">
-        <h1>YS WEE</h1>
-        <h2>Sales & Technical Manager</h2>
-        <h3>Diginex Technology (M) Sdn. Bhd.</h3>
-      </div>
     </div>
 
     <!-- Contact info -->
@@ -110,7 +73,7 @@
 
     <!-- WhatsApp icon -->
     <div class="social-icons">
-      <a href="https://api.whatsapp.com/send?phone=60102317781&text=Hello%20YS%20WEE!" target="_blank">
+      <a href="https://api.whatsapp.com/send?phone=60102317781" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
       </a>
     </div>
