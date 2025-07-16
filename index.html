@@ -32,20 +32,29 @@
       border-radius: 10px;
     }
 
-    a {
-      display: block;
-      margin: 5px 0;
-      color: #007BFF;
-      text-decoration: none;
+    .contact-info {
+      text-align: left;
+      max-width: 300px;
+      margin: 0 auto;
     }
 
-    .social-icons {
-      margin-top: 15px;
+    .contact-info a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #007BFF;
+      margin: 8px 0;
     }
-    .social-icons img {
-      width: 40px;
-      height: 40px;
-      margin: 0 5px;
+
+    .contact-info img.icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .contact-info a.whatsapp img.icon {
+      width: 28px;  /* WhatsApp icon slightly bigger */
+      height: 28px;
     }
 
     a.button {
@@ -61,25 +70,33 @@
 </head>
 <body>
   <div class="card">
-    <!-- Final ID card image with name/title/company EMBEDDED -->
+    <!-- ID card image with name/title/company embedded -->
     <div class="id-card">
       <img src="Logo.png" alt="YS WEE ID Card" />
     </div>
 
-    <!-- Contact info -->
-    <a href="tel:+60102317781">📞 +60 10-231 7781</a>
-    <a href="mailto:yswee@diginex.com.my">✉️ yswee@diginex.com.my</a>
-    <a href="https://www.diginex.com.my" target="_blank">🌐 www.diginex.com.my</a>
-
-    <!-- WhatsApp icon -->
-    <div class="social-icons">
-      <a href="https://api.whatsapp.com/send?phone=60102317781" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
+    <!-- Contact info with proper icons -->
+    <div class="contact-info">
+      <a href="tel:+60102317781">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon">
+        +60 10-231 7781
+      </a>
+      <a href="mailto:yswee@diginex.com.my">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+        yswee@diginex.com.my
+      </a>
+      <a href="https://www.diginex.com.my" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/331/331190.png" alt="Website Icon">
+        www.diginex.com.my
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=60102317781" target="_blank" class="whatsapp">
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+        +60 10-231 7781
       </a>
     </div>
 
     <!-- Download vCard button -->
-    <a class="button" href="https://weeyscsg.github.io/business-card/YS-WEE.vcf" download>
+    <a class="button" href="YS-WEE.vcf" download>
       📇 Download My Contact
     </a>
   </div>
